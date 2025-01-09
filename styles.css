@@ -1,0 +1,65 @@
+/*  ------------------------------------ universal properties ------------------------------------ */
+
+h1, h2, h3, p ul, ol {
+    margin: 0;
+    padding: 0;
+}
+  
+section ul, section ol {
+    list-style-type: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+  
+body{
+    font-family: 'Poppins';
+    background-color: #121212;
+    color:white;
+} 
+
+/*  ------------------------------------ header  ------------------------------------ */
+header{
+    margin-bottom: 8em;
+}
+
+.gradient {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.header-content{
+    display: flex;
+    position: relative;
+    top: 60px;
+    align-items: center;
+    gap: 4em;
+    margin: auto 6em auto 6em;
+}
+
+.header-content p{
+    color: #ABB1BE;
+}
+
+/*  ------------------------------------ sections  ------------------------------------ */
+main{
+    display: flex;
+    gap: 10em;
+    /* justify-items: center; */
+    margin: auto 6em auto 6em;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #1CD760;
+}
