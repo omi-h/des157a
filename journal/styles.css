@@ -1,0 +1,107 @@
+/*  ------------------------------------ universal properties ------------------------------------ */
+h1, h2, h3, p ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+  
+body{
+    background-image: url("images/bg-gradient.jpg");
+    background-size: cover;
+}
+
+/*  ------------------------------------ header ------------------------------------ */
+header{
+    margin: 6em 4em 4em 4em;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #959CED;
+}
+
+header p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #F6BFDF;
+}
+
+/*  ------------------------------------ journal posts ------------------------------------ */
+article{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto 4em auto;
+}
+
+.post-body{
+    font-family: 'Poppins', sans-serif;
+    color: #555EC2;
+    background-color: #FFF;
+    border: solid 2px #959CED;
+    border-radius: 36px;
+    padding: 4em;
+    filter: drop-shadow(3px 5px 9.7px rgba(66, 43, 143, 0.26));
+    backdrop-filter: blur(12.300000190734863px);
+  
+}
+
+.post-body h2{
+    padding-bottom: .8em;
+    font-size: 2em;
+}
+
+.post-body time{
+    border: solid 2px #555EC2;
+    border-radius: 20px;
+    padding: 6px 12px 6px 12px;
+}
+
+.post-body p{
+    margin-top: 1.5em;
+    line-height: 1.5em;
+}
+
+.post-body a{
+    color: #F6BFDF;
+    font-weight: bold;
+}
+
+.post-body a:hover{
+    color: #555EC2;
+    text-decoration: underline;
+}
+
+.post-body-content{
+    margin-top: 3em;
+}
+
+/*  ------------------------------------ footer ------------------------------------ */
+footer .footer-info{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 6em;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a{
+    color: #FFF;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #555EC2;
+}
