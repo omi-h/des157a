@@ -22,7 +22,7 @@ body{
 } 
 
 html{
-    cursor: url("images/music-cursor.png"), auto;
+    /* cursor: url("images/music-cursor.png"), auto; */
 }
 
 li a:hover{
