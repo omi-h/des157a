@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation - Functions & DOM</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background:no-repeat;
+            color: white;
+            margin: 20em 6em 10em 6em;
+        }
+        
+        h1{
+            font-size: 48px;
+            font-weight: 900;
+        }
+
+        h2{
+            font-weight: 300;
+            font-size: 18px;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        img{
+            display: block;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-text">
+        <h1>Experiment 2</h1>
+        <h2>This program will prompt the user to input their mood then give them an associated gradient and message.</h2>
+    </div>
+
+
+    <script>
+        var input = prompt( 'how are you feeling today? pick from: (happy, sad, calm, angry)', '' );
+
+        var moods = ['happy', 'sad', 'calm', 'angry'];
+
+        var moodGradients = {
+            happy: 'images/happy.png',
+            sad: 'images/sad.png',
+            calm: 'images/calm.png',
+            angry: 'images/angry.png',
+        };
+
+        var userMood = document.querySelector( 'h2' );
+        var bodyText = document.querySelector( ' .all-text ' );
+
+        for (var i = 0; i <= moods.length; i++){
+            if (input === moods[0]){
+                userMood.innerHTML = ` Glad you're feeling ${input}, I hope your day goes well! ` ;
+                document.body.style.backgroundImage = ` url( 'images/happy.png' ) ` ;
+            }
+            else if (input === moods[1]){
+                userMood.innerHTML = ` Aw man. It sucks being ${input}, I hope your day gets better! ` ;
+                document.body.style.backgroundImage = ` url( 'images/sad.png' ) ` ;
+            }
+            else if (input === moods[2]){
+                userMood.innerHTML = ` Okay zen master. I see you being ${input}. Stay chilling I guess! ` ;
+                document.body.style.backgroundImage = ` url( 'images/calm.png' ) ` ;
+            }
+            else if(input === moods[3]){
+                userMood.innerHTML = `  Woah....I see that you're ${input}. I hope you get some time to unwind! ` ; 
+                document.body.style.backgroundImage = ` url( 'images/angry.png' ) ` ;
+            }
+            else{
+                userMood.innerHTML = ` Hmm....I don't know that mood. I hope this gradient will suffice to represent how you feel today. ` ;
+                bodyText.style.color = "#0a6482";
+                document.body.style.backgroundImage = "url( 'images/unknown.png')" ;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

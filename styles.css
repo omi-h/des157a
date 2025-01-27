@@ -21,10 +21,6 @@ body{
     color:white;
 } 
 
-html{
-    /* cursor: url("images/music-cursor.png"), auto; */
-}
-
 li a:hover{
     cursor: url("images/music-cursor.png"), auto;
 }
