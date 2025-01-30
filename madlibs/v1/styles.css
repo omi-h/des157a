@@ -1,0 +1,32 @@
+/*  ------------------------------------ universal properties ------------------------------------ */
+
+h1, h2, h3, p ul, ol {
+    margin: 0;
+    padding: 0;
+}
+  
+section ul, section ol {
+    list-style-type: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+  
+body{
+    font-family: 'DM Sans';
+    background-image: url("images/madlibs-bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    color:white;
+    margin: 4em 6em 2em 6em;
+} 
+
+/*  ------------------------------------  main/form ------------------------------------ */
+main{
+    display: flex;
+}
+
+/*  ------------------------------------  footer ------------------------------------ */
