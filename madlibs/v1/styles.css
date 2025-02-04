@@ -25,23 +25,32 @@ body{
     color:white;
 } 
 
-header img{
-    margin: 8.5em 2em 2em 6em;
-    max-width: 100%;
-}
 
 /*  ------------------------------------  main/form ------------------------------------ */
-main{
+#main-page{
     display: flex;
+    /* display flex when active */
+
     gap: 120px;
     justify-content: center;
+}
+
+header img{
+    margin-top: 40%;
+    margin-left: 30%;
 }
 
 label{
     color: rgba(255, 255, 255, 0.70);
 }
 
+#madlib-questions{
+    display: flex;
+    margin-left: auto;
+}
+
 form{
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     justify-content:center ;
@@ -75,8 +84,16 @@ input{
     margin-bottom: 3em;
 }
 
-input[type=text]:focus{
+input:focus{
     outline: none;
+}
+
+select:focus{
+    outline: none;
+}
+
+select option{
+    background-color: rgba(8, 17, 66, 0.6);
 }
 
 .numbers{
@@ -85,7 +102,7 @@ input[type=text]:focus{
 }
 
 form button{
-    /* margin-top: 4em; */
+    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
     background-color:  rgba(217, 217, 217, 0.00);
@@ -93,12 +110,50 @@ form button{
     border: 1px solid white;
     border-radius: 35px;
     padding: 1em;
+
+    transition: all 500ms ease-in-out;
+}
+
+form button:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+    border: 2px solid white;
 }
 
 #madlib-output{
-    display: none;
+    display: block;
 }
-/*  ------------------------------------  footer ------------------------------------ */
-footer{
-    margin: auto auto auto 6em;
+
+/*  ------------------------------------  madlibs output ------------------------------------ */
+#madlib-output{
+    display: none;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 5em 5em 2em 5em;
+    
+    border-radius: 36px 36px 0px 0px;
+    border-top: 1px solid #050D41;
+    border-right: 1px solid #050D41;
+    border-left: 1px solid #0e1858;
+    background: rgba(1, 1, 39, 0.53);
+    box-shadow: -2px 4px 9.4px 0px rgba(1, 0, 67, 0.69);
+    backdrop-filter: blur(7.449999809265137px);
+
+    width: 600px;
+   
+}
+
+#madlib-output p{
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 1.4em;
+}
+
+span{
+    font-weight: 900;
 }
