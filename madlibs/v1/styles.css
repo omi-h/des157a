@@ -26,7 +26,7 @@ body{
 } 
 
 
-/*  ------------------------------------  main/form ------------------------------------ */
+/*  ------------------------------------  main/form page ------------------------------------ */
 #main-page{
     display: flex;
     /* display flex when active */
@@ -50,7 +50,7 @@ label{
 }
 
 form{
-    margin-left: auto;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content:center ;
@@ -72,7 +72,6 @@ select{
     color: white;
     margin-bottom: 3em;
     height: 50px;
-
 }
 
 input{
@@ -95,6 +94,7 @@ select:focus{
 select option{
     background-color: rgba(8, 17, 66, 0.6);
 }
+
 
 .numbers{
     display: flex;
@@ -120,11 +120,9 @@ form button:hover{
     border: 2px solid white;
 }
 
-#madlib-output{
-    display: block;
-}
 
 /*  ------------------------------------  madlibs output ------------------------------------ */
+
 #madlib-output{
     display: none;
 
@@ -157,3 +155,4 @@ form button:hover{
 span{
     font-weight: 900;
 }
+
