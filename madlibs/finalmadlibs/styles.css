@@ -10,9 +10,11 @@ section ul, section ol {
 }
   
 img {
-    max-width: 100%;
+    min-width: 374px;
+    width: 100%;
     height: auto;
     display: block;
+    flex-shrink: 0;
 }
   
 body{
@@ -36,7 +38,7 @@ body{
 }
 
 header img{
-    margin-top: 40%;
+    margin-top: 36%;
     margin-left: 30%;
 }
 
@@ -71,7 +73,7 @@ select{
     background-color: rgba(217, 217, 217, 0.00);;
     border-bottom: 1px solid white;
     color: white;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     height: 50px;
 }
 
@@ -81,7 +83,7 @@ input{
     border: none;
     background-color: rgba(217, 217, 217, 0.00);
     border-bottom: 1px solid white;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 input:focus{
@@ -116,16 +118,20 @@ form button{
 }
 
 form button:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     font-weight: bold;
     border: 2px solid white;
 }
 
+form p{
+    margin: 0;
+    padding-bottom: 14px;
+}
 
 /*  ------------------------------------  madlibs output ------------------------------------ */
 
-#madlib-output{
-    display: none;
+#output{
+    display: block;
 
     position: absolute;
     bottom: 0;
@@ -146,7 +152,7 @@ form button:hover{
    
 }
 
-#madlib-output p{
+#output p{
     line-height: 1.5em;
     font-weight: 300;
     font-size: 18px;
@@ -155,4 +161,14 @@ form button:hover{
 
 span{
     font-weight: 900;
+}
+
+.showing{
+    visibility: visible;
+    opacity: 1;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
 }

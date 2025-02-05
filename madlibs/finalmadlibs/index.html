@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madlibs</title>
+    
+    <!-- Normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Custom JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+
+        <div id="main-page">
+            <header>
+                <img src="images/title.png" alt="title image" width="374" height="554">
+            </header>
+
+            <section id="madlib-questions">
+                <!-- <h2>Questions</h2> -->
+                <form id="myform">
+                    <label for="zodiac">zodiac sign:</label>
+                    <select name="zodiac" id="zodiac" >
+                        <option value="aquarius">aquarius (jan. 21 - feb. 18)</option>
+                        <option value="pisces">pisces (feb. 19 - april 19)</option>
+                        <option value="taurus">taurus (april 20 - may 20)</option>
+                        <option value="gemini">gemini (may 21 - june 20)</option>
+                        <option value="cancer">cancer (june 21 - july 22)</option>
+                        <option value="leo">leo (july 23 - aug. 22)</option>
+                        <option value="virgo">virgo (aug. 23 - sept. 22)</option>
+                        <option value="libra">libra (sept. 23 - oct. 22)</option>
+                        <option value="scorpio">scorpio (oct. 23 - nov. 21)</option>
+                        <option value="sagittarius">sagittarius (nov. 22 - dec. 21)</option>
+                        <option value="capricorn">capricorn (dec. 21 - jan. 20)</option>
+                    </select>
+
+                    <label for="adjective">adjective:</label>
+                    <input type="text" name="adjective" id="adjective">
+                    <p id="errorAdj"></p>
+
+                    <div class="numbers">
+                        <label for="number1">number (1-28):</label>
+                        <input type="text" name="number" id="number1" >
+                        <label for="number2">number (1-28):</label>
+                        <input type="text" name="number" id="number2" >
+                    </div>
+                    <p id="errorNum"></p>
+
+
+                    <label for="favColor">favorite color:</label>
+                    <input type="text" name="favColor" id="favColor">
+                    <p id="errorColor"></p>
+
+
+                    <label for="verb">verb (not ending in -ing):</label>
+                    <input type="text" name="verb" id="verb">
+                    <p id="errorVerb"></p>
+
+
+                    <label for="pluralnoun">plural noun:</label>
+                    <input type="text" name="pluralnoun" id="pluralnoun">
+                    <p id="errorPNoun"></p>
+
+
+                    <button type="submit">what's my prediction?</button>
+                </form>
+            </section>
+        </div>
+
+        <section id="output" class="hidden">
+            <article id="madLibs"></article>
+        </section>
+    </main>
+
+    <!-- <footer>
+        <p>made by naomi.</p>
+    </footer> -->
+    
+</body>
+</html>
