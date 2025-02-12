@@ -88,6 +88,18 @@ article{
     margin-top: 3em;
 }
 
+article img{
+    margin:auto;
+    border-radius: 12px;
+}
+
+figcaption{
+    margin-top: .8em;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+}
+
 /*  ------------------------------------ footer ------------------------------------ */
 footer .footer-info{
     display: flex;
