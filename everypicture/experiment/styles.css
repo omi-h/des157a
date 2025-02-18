@@ -39,6 +39,26 @@ h1{
     margin: 10em auto;
     width: 250px;
     height: 250px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+}
 
+.button{
+    display: flex; 
+    justify-content: center;   
+    align-items: center;
+}
+
+button{
+    font-size: 1em;
+    color: rgb(7, 141, 114);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(7, 141, 114);
+    border-radius: 30px;
+    padding: 0.5em;
+    z-index: 1;
+    transition: transform 100ms ease;
+}
+
+button:hover{
+    transform: scale(1.1);
 }

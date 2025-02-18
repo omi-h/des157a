@@ -1,20 +1,20 @@
 (function(){
     'use strict';
 
-    const container = document.querySelector('.container');
+    const button = document.querySelector('button');
     const images = document.querySelectorAll('img');
 
-    console.log(images);
+    // console.log(images);
 
 
-    container.addEventListener('mouseenter' , scatter);
+    button.addEventListener('click' , scatter);
 
     function scatter(event){
         for (let i = 0; i < images.length; i++) {
-            const randomX = (Math.random() - 0.5)*500;
-            const randomY = (Math.random() - 0.5)*500;
+            const randomX = (Math.random() - .5)*400;
+            const randomY = (Math.random() - .5)*400;
             images[i].style.transform = `translate(-50%, -50%) translate(${randomX}px, ${randomY}px)`;
-            images[i].style.transition = 'transform 0.8s ease-in';
+            images[i].style.transition = 'transform 1s ease-out';
           }
     }
 
