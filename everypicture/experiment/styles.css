@@ -1,0 +1,44 @@
+/*  ------------------------------------ universal properties ------------------------------------ */
+
+h1, h2, h3, p ul, ol {
+    margin: 0;
+    padding: 0;
+}
+  
+section ul, section ol {
+    list-style-type: none;
+}
+  
+body{
+    font-family: 'Poppins';
+    color: rgb(7, 141, 114);
+    background-color:white;
+} 
+
+/*  ------------------------------------ text ------------------------------------ */
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+/*  ------------------------------------ images ------------------------------------ */
+.container img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 150px;
+    padding: 2em;
+    /* border: 2px solid blue;
+    background-color: blue; */
+}
+
+.container{
+    position: relative;
+    margin: 10em auto;
+    width: 250px;
+    height: 250px;
+    border: 2px solid red;
+
+}
